@@ -1,0 +1,8 @@
+<!-- <h1>Ejercicio 3 - Hijo</h1> -->
+<select [(ngModel)]="asignaturaSeleccionada">
+    @for (item of asignaturas; track item) {
+        <option [value]="item.asignatura">{{item.asignatura}}</option>
+    }
+</select>
+
+<button (click)="enviarPadre(asignaturaSeleccionada)">Enviar asignatura</button>

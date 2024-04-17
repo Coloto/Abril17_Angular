@@ -1,0 +1,8 @@
+<!-- <h1>Ejercicio 4 - Hijo</h1> -->
+<label for="inputNombre">Nombre: </label>
+<input type="text" name="inputNombre" [(ngModel)]="inputNombre">
+
+<label for="inputEdad">Edad: </label>
+<input type="number" name="inputEdad" [(ngModel)]="inputEdad">
+<button (click)="agregarUsuario(inputNombre, inputEdad)">Agregar usuario</button>
+<button (click)="eliminarUsuario()">Eliminar ultimo usuario</button>

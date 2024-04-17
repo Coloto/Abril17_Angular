@@ -1,0 +1,8 @@
+<h1>Ejercicio 2</h1>
+<app-ejercicio2-hijo (llamadaPadre)="recibirDato($event)"></app-ejercicio2-hijo>
+<hr>
+<ul>
+    @for (item of cesta; track item) {
+        <li>{{item.producto}}</li>
+    }
+</ul>

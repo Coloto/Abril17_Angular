@@ -1,0 +1,7 @@
+<h1>Ejercicio 4 - Padre</h1>
+<app-ejercicio4-hijo (llamadaPadre)="recibirDato($event)"></app-ejercicio4-hijo>
+<ul>
+    @for (item of usuarios; track item) {
+        <li>{{item.nombre}} - {{item.edad}} años</li>
+    }
+</ul>
